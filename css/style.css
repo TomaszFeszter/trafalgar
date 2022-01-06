@@ -1,51 +1,19 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 12 |     font-family: $font-primary;
+ *    |                  ^^^^^^^^^^^^^
+ *    '
+ *   sass/base/_common.scss 12:18  @import
+ *   sass/base/_base.scss 1:9      @import
+ *   sass/main.scss 2:9            root stylesheet */
 
-html {
-  font-size: 62.5%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 12 \2502      font-family: $font-primary;\a    \2502                   ^^^^^^^^^^^^^\a    \2575 \a   sass/base/_common.scss 12:18  @import\a   sass/base/_base.scss 1:9      @import\a   sass/main.scss 2:9            root stylesheet";
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-@font-face {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 700;
-  src: url(./../fonts/Mulish-ExtraBold.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 600;
-  src: url(/fonts/Mulish-Bold.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 500;
-  src: url(/fonts/Mulish-Medium.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 400;
-  src: url(/fonts/Mulish-Regular.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Mulish";
-  font-style: normal;
-  font-weight: 300;
-  src: url(/fonts/Mulish-Light.ttf) format("truetype");
-}
-
-/*# sourceMappingURL=style.css.map */
