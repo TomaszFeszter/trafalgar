@@ -1,0 +1,28 @@
+.btn {
+  width: 20rem;
+  height: 6rem;
+  border: 1.4px solid $col-primary;
+  border-radius: 5.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn__blue {
+  background-color: $col-primary;
+  color: $col-white;
+}
+
+.btn__white {
+  background-color: $col-white;
+  color: $col-primary;
+}
+
+.btn__read-more {
+  font-family: $font-primary;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  color: $col-blue-400;
+}

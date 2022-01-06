@@ -17,10 +17,6 @@ img {
   height: auto;
 }
 
-body {
-  font-family: "Mulish";
-}
-
 .h1 {
   font-size: 4.8rem;
   line-height: 5.6rem;
@@ -79,6 +75,35 @@ body {
 
 .text-white {
   color: #FFFFFF;
+}
+
+.btn {
+  width: 20rem;
+  height: 6rem;
+  border: 1.4px solid #458FF6;
+  border-radius: 5.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn__blue {
+  background-color: #458FF6;
+  color: #FFFFFF;
+}
+
+.btn__white {
+  background-color: #FFFFFF;
+  color: #458FF6;
+}
+
+.btn__read-more {
+  font-family: "Mulish";
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  color: #4089ED;
 }
 
 @font-face {
