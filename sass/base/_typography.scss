@@ -1,0 +1,40 @@
+.h1 {
+    @include font(4.8rem, 5.6rem, 700);
+}
+
+.h2 {
+    @include font(3.6rem, 5.6rem, 700);
+
+    &--white {
+        color: $col-white;
+        line-height: 4.8rem;
+    }
+}
+
+.h3 {
+    @include font(2.4rem, 5.6rem, 700);
+}
+
+.h4 {
+    @include font(2.1rem, 3.2rem, 300);
+}
+
+.h5 {
+    @include font(2rem, 6rem, 700);
+}
+
+.h6 {
+    @include font(1.8rem, 3rem, 300);
+
+    &--footer {
+        line-height: 2.8rem;
+    }
+}
+
+.p {
+    @include font(1.6rem, 2.8rem, 300);
+}
+
+.text-white {
+    color: $col-white;
+}
