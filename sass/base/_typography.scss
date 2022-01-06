@@ -5,8 +5,7 @@
 .h2 {
     @include font(3.6rem, 5.6rem, 700);
 
-    &--white {
-        color: $col-white;
+    &--l-height {
         line-height: 4.8rem;
     }
 }
@@ -16,14 +15,14 @@
 }
 
 .h4 {
-    @include font(2.1rem, 3.2rem, 300);
-}
-
-.h5 {
     @include font(2rem, 6rem, 700);
 }
 
-.h6 {
+.p1 {
+    @include font(2.1rem, 3.2rem, 300);
+}
+
+.p2 {
     @include font(1.8rem, 3rem, 300);
 
     &--footer {
@@ -31,7 +30,7 @@
     }
 }
 
-.p {
+.p3 {
     @include font(1.6rem, 2.8rem, 300);
 }
 
