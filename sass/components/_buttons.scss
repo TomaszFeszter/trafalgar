@@ -1,12 +1,12 @@
 .btn {
-  width: 20rem;
-  height: 6rem;
+  max-width: 20rem;
+  line-height: 5.6rem;
   border: 1.4px solid $col-primary;
-  border-radius: 5.5rem;
+  border-radius: 55px;
   font-size: 1.8rem;
   font-weight: 700;
   text-align: center;
-  margin: 0 auto;
+  padding: 0 6.5rem;
 }
 
 .btn__blue {
@@ -20,9 +20,23 @@
 }
 
 .btn__read-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: $font-primary;
   font-size: 1.7rem;
   font-weight: 600;
   line-height: 2.8rem;
   color: $col-blue-400;
+  border: none;
+  background: $col-white;
+  margin-top: 2.5rem;
+
+
+  svg {
+    fill: $col-blue-400;
+    margin-left: 1.5rem;
+    ;
+  }
+
 }
