@@ -17,10 +17,6 @@ img {
   height: auto;
 }
 
-body {
-  font-family: "Mulish";
-}
-
 .h1 {
   font-size: 4.8rem;
   line-height: 5.6rem;
@@ -34,8 +30,7 @@ body {
   font-weight: 700;
   color: #000000;
 }
-.h2--white {
-  color: #FFFFFF;
+.h2--l-height {
   line-height: 4.8rem;
 }
 
@@ -47,33 +42,57 @@ body {
 }
 
 .h4 {
-  font-size: 2.1rem;
-  line-height: 3.2rem;
-  font-weight: 300;
-  color: #000000;
-}
-
-.h5 {
   font-size: 2rem;
   line-height: 6rem;
   font-weight: 700;
   color: #000000;
 }
 
-.h6 {
+.p {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.p1 {
+  font-size: 2.1rem;
+  line-height: 3.2rem;
+  font-weight: 300;
+  color: #000000;
+}
+
+.p2 {
   font-size: 1.8rem;
   line-height: 3rem;
   font-weight: 300;
   color: #000000;
 }
-.h6--footer {
+.p2--footer {
   line-height: 2.8rem;
 }
 
-.p {
+.p3 {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  color: #000000;
+}
+.p3.bold {
+  font-weight: 700;
+}
+
+.p4 {
   font-size: 1.6rem;
   line-height: 2.8rem;
   font-weight: 300;
+  color: #000000;
+}
+
+.text-button {
+  font-size: 1.8rem;
+  line-height: 6rem;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -84,7 +103,7 @@ body {
 @font-face {
   font-family: "Mulish";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   src: url(../fonts/Mulish-ExtraBold.ttf) format("truetype");
 }
 @font-face {
@@ -110,6 +129,91 @@ body {
   font-style: normal;
   font-weight: 300;
   src: url(../fonts/Mulish-Light.ttf) format("truetype");
+}
+.button {
+  min-width: 20rem;
+  min-height: 6rem;
+  background-color: #458FF6;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5.5rem;
+}
+
+.header {
+  padding: 1.5rem;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo-svg {
+  width: 41px;
+  height: 41px;
+}
+.header .p {
+  margin-left: 1rem;
+}
+.header__list {
+  display: none;
+  list-style: none;
+}
+.header__menu-icon {
+  width: 3rem;
+  height: 3rem;
+  stroke: #000000;
+  stroke-width: 0.5;
+  fill: none;
+}
+.header__content {
+  margin-top: 2.5rem;
+}
+.header .h1 {
+  margin-bottom: 2.5rem;
+}
+.header .p1 {
+  margin-bottom: 4.5rem;
+}
+.header__img {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 2rem;
+  }
+  .header__logo {
+    margin-right: auto;
+  }
+  .header__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__item {
+    margin-left: 2.5rem;
+  }
+  .header__menu-icon {
+    display: none;
+  }
+  .header__content {
+    margin-top: 8rem;
+    display: flex;
+  }
+  .header__container {
+    width: 50%;
+  }
+  .header__img {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
