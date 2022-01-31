@@ -46,12 +46,6 @@
     @include font(1.6rem, 2.8rem, 300);
 }
 
-
-
-.text-button {
-    @include font(1.8rem, 6rem, 700);
-}
-
 .text-white {
     color: $col-white;
 }

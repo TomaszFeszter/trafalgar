@@ -1,0 +1,20 @@
+.dot {
+    position: relative;
+    overflow: visible;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url(./../../img/main/articles/dots.svg);
+        width: 132px;
+        height: 115px;
+        z-index: -1;
+    }
+
+    &--left {
+        &::before {
+            top: 10rem;
+            left: -5rem;
+        }
+    }
+}
