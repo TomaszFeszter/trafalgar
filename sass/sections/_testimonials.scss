@@ -1,0 +1,179 @@
+.testimonial {
+  margin-top: 8rem;
+
+
+  &__wrapp {
+    @include flex(column, space-between);
+    text-align: center;
+    background: $background-gradient;
+    color: $col-white;
+    border-radius: 24px;
+    padding: 4rem 4rem;
+    position: relative;
+    z-index: 1;
+    margin: 2rem 2.5rem 2.1rem 2.5rem;
+  }
+
+  &__description {
+    margin-top: 4rem;
+
+    .p {
+      margin-top: 4rem;
+    }
+
+    .person {
+      position: relative;
+
+      .p {
+        margin-top: 0.5rem;
+      }
+
+      &__img {
+        max-width: 141px;
+      }
+
+      &__txt {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  &__nav {
+    max-width: 33.6rem;
+    @include flex;
+    margin: 2rem auto 0 auto;
+    justify-content: space-around;
+    cursor: pointer;
+
+    &__arrow {
+
+      text-align: center;
+      fill: $col-blue-250;
+      opacity: 0.4;
+
+      &:hover,
+      &.disabled {
+        opacity: 1;
+      }
+    }
+
+    &__list:last-child {
+      margin-right: 0;
+    }
+
+    &__list {
+      @include flex(row, space-around);
+      align-content: center;
+
+      &__item {
+        width: 10px;
+        height: 10px;
+        border: none;
+        border-radius: 5px;
+        background: $background;
+        opacity: 0.4;
+        margin-right: 1.8rem;
+
+        &:hover,
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+
+    &__item:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+@media screen and(min-width:450px) {
+
+
+  .testimonial__wrapp {
+    .h2 {
+      margin-top: 2rem;
+      font-size: 3.2rem;
+    }
+
+    &__description {
+      margin-bottom: 2rem;
+    }
+
+    .person {
+      @include flex(row, space-around);
+      margin-bottom: 2rem;
+
+
+    }
+  }
+}
+
+
+
+@media screen and(min-width:600px) {
+  .testimonial {
+    .h2 {
+
+      margin-top: 3rem;
+    }
+
+    .h4 {
+      font-size: 1.8rem;
+    }
+
+    .p {
+      font-size: 1.6rem;
+      margin-bottom: 3rem;
+    }
+
+    &__description {
+
+      &__wrapp__text {
+        margin-left: 0;
+      }
+
+      .person {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
+
+
+@media screen and(min-width:800px) {
+  .testimonial {
+    .h2 {
+      font-size: 3.6rem;
+      margin-top: 6.4rem;
+    }
+
+    .h4 {
+      font-size: 2.2rem;
+    }
+
+    .p {
+      padding: 0 6rem 0 6rem;
+      flex-basis: 50%;
+      font-size: 1.9rem
+    }
+
+    .testimonial__description {
+      @include flex(row, space-around);
+      align-content: center;
+      margin-bottom: 8.9rem;
+
+      .person {
+        flex-basis: 50%;
+        justify-content: center;
+        margin-bottom: 0;
+
+
+        &__img {
+          margin-right: 2.9rem;
+        }
+      }
+    }
+  }
+}

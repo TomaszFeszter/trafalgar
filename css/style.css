@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: "Mulish";
+  margin: 0 auto;
 }
 
 img {
@@ -17,64 +18,66 @@ img {
   height: auto;
 }
 
-body {
-  font-family: "Mulish";
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .h1 {
   font-size: 4.8rem;
   line-height: 5.6rem;
   font-weight: 700;
-  color: #000000;
 }
 
 .h2 {
-  font-size: 3.6rem;
-  line-height: 5.6rem;
+  font-size: 3rem;
+  line-height: 4.6rem;
   font-weight: 700;
-  color: #000000;
 }
 .h2--white {
   color: #FFFFFF;
-  line-height: 4.8rem;
+  line-height: 3.2rem;
 }
 
 .h3 {
   font-size: 2.4rem;
   line-height: 5.6rem;
   font-weight: 700;
-  color: #000000;
 }
 
 .h4 {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   line-height: 3.2rem;
-  font-weight: 300;
-  color: #000000;
+  font-weight: 700;
 }
 
 .h5 {
   font-size: 2rem;
   line-height: 6rem;
   font-weight: 700;
-  color: #000000;
 }
 
 .h6 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 3rem;
   font-weight: 300;
-  color: #000000;
 }
 .h6--footer {
   line-height: 2.8rem;
 }
+@media screen and (min-width: 1024px) {
+  .h6 {
+    font-size: 1.8rem;
+  }
+}
 
 .p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2.8rem;
   font-weight: 300;
-  color: #000000;
 }
 
 .text-white {
@@ -84,7 +87,7 @@ body {
 @font-face {
   font-family: "Mulish";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   src: url(../fonts/Mulish-ExtraBold.ttf) format("truetype");
 }
 @font-face {
@@ -110,6 +113,384 @@ body {
   font-style: normal;
   font-weight: 300;
   src: url(../fonts/Mulish-Light.ttf) format("truetype");
+}
+.btn {
+  max-width: 15rem;
+  line-height: 4.6rem;
+  border: 1.4px solid #458FF6;
+  border-radius: 55px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 3.5rem;
+  z-index: 1;
+}
+
+.btn__blue {
+  background-color: #458FF6;
+  color: #FFFFFF;
+}
+
+.btn__white {
+  background-color: #FFFFFF;
+  color: #458FF6;
+  z-index: 1;
+}
+
+.btn__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  color: #4089ED;
+  border: none;
+  background: #FFFFFF;
+}
+.btn__link svg {
+  fill: #4089ED;
+  margin-left: 1.5rem;
+}
+
+.hr {
+  width: 5.6rem;
+  height: 2px;
+  border: none;
+  border-radius: 0.6rem;
+  background-color: #000000;
+  margin: 3rem auto;
+}
+.hr--white {
+  background-color: #FFFFFF;
+}
+
+.dots {
+  position: relative;
+  overflow: visible;
+}
+.dots::before, .dots::after {
+  position: absolute;
+  background-image: url(./../../img/main/articles/dots.svg);
+  width: 132px;
+  height: 115px;
+  z-index: -1;
+}
+.dots::before {
+  content: "";
+}
+.dots--top-right::before {
+  top: 0;
+  right: 0;
+}
+.dots--top-left::before {
+  top: -5rem;
+  left: -5rem;
+}
+.dots--bottom-right::before {
+  bottom: 0;
+  right: 0;
+}
+.dots--bottom-left::before {
+  bottom: 6rem;
+  left: -8rem;
+}
+.dots--top-center::before {
+  top: 0;
+  right: 0;
+}
+.dots--left-center::before {
+  top: 0;
+  left: 0;
+}
+.dots--bottom-center::before {
+  bottom: 0;
+  right: 0;
+}
+.dots--right-center::before {
+  bottom: 0;
+  left: 0;
+}
+.dots__second::after {
+  content: "";
+}
+.dots__second--top-right::after {
+  top: -5rem;
+  right: -5rem;
+}
+.dots__second--top-left::after {
+  top: 0;
+  left: 0;
+}
+.dots__second--bottom-right::after {
+  bottom: 0;
+  right: 0;
+}
+.dots__second--bottom-left::after {
+  bottom: 0;
+  left: 0;
+}
+.dots__second--top-center::after {
+  top: 0;
+  right: 0;
+}
+.dots__second--left-center::after {
+  top: 0;
+  left: 0;
+}
+.dots__second--bottom-center::after {
+  bottom: 0;
+  right: 0;
+}
+.dots__second--right-center::after {
+  bottom: 0;
+  left: 0;
+}
+
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/Mulish-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/Mulish-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/Mulish-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Mulish-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/Mulish-Light.ttf) format("truetype");
+}
+.testimonial {
+  margin-top: 8rem;
+}
+.testimonial__wrapp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  color: #FFFFFF;
+  border-radius: 24px;
+  padding: 4rem 4rem;
+  position: relative;
+  z-index: 1;
+  margin: 2rem 2.5rem 2.1rem 2.5rem;
+}
+.testimonial__description {
+  margin-top: 4rem;
+}
+.testimonial__description .p {
+  margin-top: 4rem;
+}
+.testimonial__description .person {
+  position: relative;
+}
+.testimonial__description .person .p {
+  margin-top: 0.5rem;
+}
+.testimonial__description .person__img {
+  max-width: 141px;
+}
+.testimonial__description .person__txt {
+  margin-top: 3rem;
+}
+.testimonial__nav {
+  max-width: 33.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto 0 auto;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.testimonial__nav__arrow {
+  text-align: center;
+  fill: #5B9BF3;
+  opacity: 0.4;
+}
+.testimonial__nav__arrow:hover, .testimonial__nav__arrow.disabled {
+  opacity: 1;
+}
+.testimonial__nav__list:last-child {
+  margin-right: 0;
+}
+.testimonial__nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.testimonial__nav__list__item {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #5B9BF3;
+  opacity: 0.4;
+  margin-right: 1.8rem;
+}
+.testimonial__nav__list__item:hover, .testimonial__nav__list__item.active {
+  opacity: 1;
+}
+.testimonial__nav__item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 450px) {
+  .testimonial__wrapp .h2 {
+    margin-top: 2rem;
+    font-size: 3.2rem;
+  }
+  .testimonial__wrapp__description {
+    margin-bottom: 2rem;
+  }
+  .testimonial__wrapp .person {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .testimonial .h2 {
+    margin-top: 3rem;
+  }
+  .testimonial .h4 {
+    font-size: 1.8rem;
+  }
+  .testimonial .p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+  .testimonial__description__wrapp__text {
+    margin-left: 0;
+  }
+  .testimonial__description .person {
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .testimonial .h2 {
+    font-size: 3.6rem;
+    margin-top: 6.4rem;
+  }
+  .testimonial .h4 {
+    font-size: 2.2rem;
+  }
+  .testimonial .p {
+    padding: 0 6rem 0 6rem;
+    flex-basis: 50%;
+    font-size: 1.9rem;
+  }
+  .testimonial .testimonial__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 8.9rem;
+  }
+  .testimonial .testimonial__description .person {
+    flex-basis: 50%;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .testimonial .testimonial__description .person__img {
+    margin-right: 2.9rem;
+  }
+}
+.articles {
+  margin-top: 22rem;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+.articles__column {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 10rem;
+  margin-bottom: 7.2rem;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 0;
+}
+.articles__column--box {
+  max-width: 30rem;
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+.articles__column--box .wrapp__text {
+  margin: 2.4rem 3.3rem 3.3rem 3.5rem;
+  text-align: left;
+  z-index: 1;
+}
+.articles__column--box .wrapp__text p {
+  margin-top: 1.2rem;
+}
+.articles__column--box .wrapp__text .btn__link {
+  margin-top: 2.4rem;
+}
+.articles .cloud {
+  position: absolute;
+  left: 15%;
+  top: -10%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+@media screen and (min-width: 450px) {
+  .articles__column--box {
+    max-width: 35rem;
+  }
+  .articles__column .h4 {
+    font-size: 2.1rem;
+  }
+  .articles__column .p {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .articles__column {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3.5rem;
+    justify-content: center;
+  }
+
+  .btn {
+    max-width: 20rem;
+    line-height: 5.6rem;
+    border-radius: 55px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 6.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
