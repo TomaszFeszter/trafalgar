@@ -1,8 +1,13 @@
 .hr {
-  width: 10%;
+  width: 5.6rem;
   height: 2px;
   border: none;
   border-radius: 0.6rem;
   background-color: $col-black;
-  margin: 2.5rem auto;
+  margin: 3rem auto;
+
+
+  &--white {
+    background-color: $col-white;
+  }
 }
