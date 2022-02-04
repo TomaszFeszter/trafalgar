@@ -46,6 +46,11 @@
     @include font(1.6rem, 2.8rem, 300);
 }
 
+.hr {
+    background: $col-black;
+    min-width: 5.6rem;
+}
+
 .text-white {
     color: $col-white;
 }
