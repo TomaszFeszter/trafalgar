@@ -8,10 +8,10 @@
     background: $background-gradient;
     color: $col-white;
     border-radius: 24px;
-    padding: 4rem 4rem;
+    padding: 2rem 4rem;
     position: relative;
     z-index: 1;
-    margin: 2rem 2.5rem 2.1rem 2.5rem;
+
   }
 
   &__description {
@@ -19,6 +19,7 @@
 
     .p {
       margin-top: 4rem;
+
     }
 
     .person {
@@ -26,6 +27,7 @@
 
       .p {
         margin-top: 0.5rem;
+
       }
 
       &__img {
@@ -51,14 +53,13 @@
       fill: $col-blue-250;
       opacity: 0.4;
 
-      &:hover,
-      &.disabled {
+      &:hover {
         opacity: 1;
       }
-    }
 
-    &__list:last-child {
-      margin-right: 0;
+      &.disabled {
+        opacity: 0.5;
+      }
     }
 
     &__list {
@@ -74,22 +75,23 @@
         opacity: 0.4;
         margin-right: 1.8rem;
 
-        &:hover,
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+
         &.active {
           opacity: 1;
         }
       }
     }
-
-    &__item:last-child {
-      margin-right: 0;
-    }
   }
 }
 
-
 @media screen and(min-width:450px) {
-
 
   .testimonial__wrapp {
     .h2 {
@@ -104,13 +106,9 @@
     .person {
       @include flex(row, space-around);
       margin-bottom: 2rem;
-
-
     }
   }
 }
-
-
 
 @media screen and(min-width:600px) {
   .testimonial {
@@ -141,7 +139,6 @@
   }
 }
 
-
 @media screen and(min-width:800px) {
   .testimonial {
     .h2 {
@@ -168,7 +165,6 @@
         flex-basis: 50%;
         justify-content: center;
         margin-bottom: 0;
-
 
         &__img {
           margin-right: 2.9rem;

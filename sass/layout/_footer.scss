@@ -1,0 +1,61 @@
+.footer {
+  margin-top: 16rem;
+  overflow: visible;
+
+  a {
+    color: $col-white;
+  }
+
+  &__wrapp {
+    max-width: 1469px;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 7rem;
+    justify-items: center;
+    background: $background-linear;
+
+    &__traf {
+      @include flex(column, left, left);
+      grid-row: 4/5;
+
+      .logo {
+        margin-bottom: 1.2rem;
+
+        &__txt {
+          @include flex(column);
+        }
+      }
+
+      .traf__txt {
+        margin-bottom: 2.1rem;
+      }
+    }
+  }
+
+  &__list {
+    @include flex(column, left);
+    margin-bottom: 2rem;
+    height: 100%;
+
+    &__item--title {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width:870px) {
+  .footer__wrapp {
+    grid-template-columns: 39.1rem repeat(3, 1fr);
+    padding: 10.9rem 2rem;
+
+    &__traf {
+      grid-row: 1/2;
+      margin-right: 4rem;
+    }
+  }
+
+  .footer__list__item--title {
+    margin-bottom: auto;
+  }
+}
