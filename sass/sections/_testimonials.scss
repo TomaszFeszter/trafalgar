@@ -1,7 +1,6 @@
 .testimonial {
   margin-top: 8rem;
 
-
   &__wrapp {
     @include flex(column, space-between);
     text-align: center;
@@ -11,7 +10,6 @@
     padding: 2rem 4rem;
     position: relative;
     z-index: 1;
-
   }
 
   &__description {
@@ -19,7 +17,6 @@
 
     .p {
       margin-top: 4rem;
-
     }
 
     .person {
@@ -27,7 +24,6 @@
 
       .p {
         margin-top: 0.5rem;
-
       }
 
       &__img {
@@ -48,17 +44,12 @@
     cursor: pointer;
 
     &__arrow {
-
       text-align: center;
       fill: $col-blue-250;
       opacity: 0.4;
 
-      &:hover {
+      &:hover:not(.disabled) {
         opacity: 1;
-      }
-
-      &.disabled {
-        opacity: 0.5;
       }
     }
 

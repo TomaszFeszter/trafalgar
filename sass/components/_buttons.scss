@@ -8,40 +8,29 @@
   font-size: 1.6rem;
   padding: 0 3.5rem;
 
-
-  &__desktop {
-    max-width: 20rem;
-    line-height: 5.6rem;
-    font-size: 1.8rem;
-    padding: 0 6.5rem;
-  }
-}
-
-.btn__blue {
-  background-color: $col-primary;
-  color: $col-white;
-}
-
-.btn__white {
-  background-color: $col-white;
-  color: $col-primary;
-  z-index: 1;
-}
-
-.btn__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.7rem;
-  font-weight: 600;
-  line-height: 2.8rem;
-  color: $col-blue-400;
-  border: none;
-  background: $col-white;
-
-  svg {
-    fill: $col-blue-400;
-    margin-left: 1.5rem;
+  &__blue {
+    background-color: $col-primary;
+    color: $col-white;
   }
 
+  &__white {
+    background-color: $col-white;
+    color: $col-primary;
+    z-index: 1;
+  }
+
+  &__link {
+    @include flex(row, center, center);
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    color: $col-blue-400;
+    border: none;
+    background: $col-white;
+
+    svg {
+      fill: $col-blue-400;
+      margin-left: 1.5rem;
+    }
+  }
 }

@@ -37,12 +37,12 @@
     }
 }
 
-.p1 {
-    @include font(2.1rem, 3.2rem, 300);
-}
-
 .h6 {
     @include font(1.6rem, 3rem, 300);
+}
+
+.p1 {
+    @include font(2.1rem, 3.2rem, 300);
 }
 
 .p2 {
@@ -55,23 +55,13 @@
 
     @media screen and (min-width: 1024px) {
         font-size: 1.8rem;
-
     }
-}
-
-// @todo remove both merged classes in file 
-.p {
-    @include font(1.4rem, 2.8rem, 300);
 }
 
 .p3 {
     @include font(1.6rem, 2.8rem, 300);
 }
 
-.text-button {
-    @include font(1.8rem, 6rem, 700);
-}
-
-.text-white {
-    color: $col-white;
+.p {
+    @include font(1.4rem, 2.8rem, 300);
 }

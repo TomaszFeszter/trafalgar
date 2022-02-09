@@ -1,7 +1,6 @@
 .article {
   margin-top: 14rem;
   text-align: center;
-  max-width: 100%;
   overflow: hidden;
 
   &__container {
@@ -13,7 +12,6 @@
     height: 100%;
     margin-bottom: 7.2rem;
     margin-top: 8rem;
-    position: relative;
     z-index: 0;
 
     &__column {
@@ -22,7 +20,6 @@
       background: $col-white;
       border-radius: 20px;
       box-shadow: 10px 40px 50px $box-shadow;
-
 
       &__wrapper__text {
         @include flex(column);
@@ -42,7 +39,6 @@
   }
 
   .cloud {
-
     position: absolute;
     left: 15%;
     top: -10%;
@@ -52,31 +48,31 @@
 }
 
 @media screen and(min-width:450px) {
-
   .article__container__column__wrapper {
     max-width: 35rem;
-  }
 
-  .h4 {
-    font-size: 2.1rem;
-  }
+    .h4 {
+      font-size: 2.1rem;
+    }
 
-  .p {
-    font-size: 1.6rem;
+    .p {
+      font-size: 1.6rem;
+    }
   }
 }
 
 @media screen and(min-width:1020px) {
+  .article {
 
-  .article__container {
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 3.5rem;
-    justify-content: center;
+    &__container {
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 3.5rem;
+      justify-content: center;
 
-    &__column__wrapper {
-      @include flex(column, left);
-
+      &__column__wrapper {
+        @include flex(column, left);
+      }
     }
   }
 
