@@ -1,8 +1,112 @@
-.illustration {
-    &__btn-icon {
-        transform: rotate(90deg);
-        width: 3rem;
-        height: 1.5rem;
-        fill: $col-primary;
+@media (min-width: 320px) {
+    .illustration {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 22rem;
+
+        &__item {
+            @include flex(column);
+            margin-top: 22rem;
+        }
+
+        &__container {
+            @include flex(column);
+            margin-bottom: 2.5rem;
+            text-align: center;
+
+            .h2 {
+                margin-bottom: 2rem;
+            }
+
+            .p2 {
+                margin-top: 2.5rem;
+                margin-bottom: 3rem;
+                color: $col-grey-800;
+            }
+        }
+
+        &__btn-icon {
+            transform: rotate(90deg);
+            width: 3rem;
+            height: 1.5rem;
+            fill: $col-primary;
+        }
+    }
+
+    .dot {
+        &--right {
+            &::before {
+                top: 96.5rem;
+                right: -5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .illustration {
+        &__item {
+            &:nth-child(even) {
+                flex-direction: row;
+            }
+
+            &:nth-child(odd) {
+                flex-direction: row-reverse;
+
+                .illustration__container {
+                    padding-left: 2rem;
+                }
+            }
+        }
+
+        &__container {
+            @include flex(column, center, start);
+            text-align: left;
+            padding-left: 2rem;
+            width: 50%;
+
+            .h2 {
+                margin-bottom: 2rem;
+            }
+
+            .p2 {
+                margin-top: 2.5rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        &__img {
+            width: 50%;
+        }
+    }
+
+    .dot {
+        &--right {
+            &::before {
+                top: 68.5rem;
+                right: -5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .illustration {
+        &__item {
+            gap: 13.7rem;
+        }
+
+        &__container {
+            max-width: 48.6rem;
+
+            .h2 {
+                margin-bottom: 2.6rem;
+            }
+
+            .p2 {
+                margin-top: 3.1rem;
+                margin-bottom: 3.7rem;
+            }
+        }
     }
 }

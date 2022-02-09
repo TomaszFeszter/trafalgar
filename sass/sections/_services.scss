@@ -1,8 +1,12 @@
+// TODO zrób szary kolor dla tekstu i text-align left
+// TODO dodaj plamę na background
 .services {
+    position: relative;
     margin-top: 19rem;
     padding-left: 3rem;
     padding-right: 3rem;
     @include flex(column);
+    overflow: hidden;
 
     &__container {
         @include flex(column);
@@ -14,9 +18,17 @@
         }
 
         .p2 {
+            text-align: center;
             color: $col-grey-800;
             margin-top: 3.3rem;
         }
+    }
+
+    &__bg {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
     }
 
     &__grid {
@@ -24,6 +36,15 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 3.6rem;
         margin-bottom: 6.9rem;
+    }
+
+    .dot {
+        &--right {
+            &::before {
+                top: 28.7rem;
+                right: -5rem;
+            }
+        }
     }
 
     &__item {
@@ -62,6 +83,11 @@
 @media (max-width: 670px) {
 
     .services {
+
+        &__bg {
+            display: none;
+        }
+
         &__grid {
             grid-template-columns: minmax(0, 1fr);
         }
