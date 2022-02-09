@@ -3,7 +3,7 @@
 }
 
 .h2 {
-    @include font(3rem, 4.6rem, 700);
+    @include font(3.6rem, 5.6rem, 700);
 
     &--white {
         color: $col-white;
@@ -49,10 +49,6 @@
     }
 }
 
-// @todo remove both merged classes in file 
-.p {
-    @include font(1.4rem, 2.8rem, 300);
-}
 
 .p3 {
     @include font(1.8rem, 2.3rem, 400);

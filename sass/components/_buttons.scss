@@ -2,10 +2,16 @@
     @include font(1.8rem, 6rem, 700);
     min-width: 20rem;
     min-height: 6rem;
-    background-color: $col-primary;
-    color: $col-white;
-    border: none;
+    color: $col-primary;
+    background: transparent;
+    border: 1.4px solid $col-primary;
     border-radius: 5.5rem;
+
+    &--blue {
+        background-color: $col-primary;
+        color: $col-white;
+        border: none;
+    }
 }
 
 .btn {
