@@ -1,4 +1,5 @@
 .footer {
+  background: $background-linear;
   max-width: 100%;
   margin-top: 16rem;
   overflow: visible;
@@ -8,8 +9,8 @@
   }
 
   &__wrapp {
-    max-width: 1469px;
-    padding: 4rem 2rem;
+    max-width: 1496px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 4rem;
