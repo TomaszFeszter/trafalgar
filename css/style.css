@@ -246,7 +246,7 @@ a {
 }
 .dots::before, .dots::after {
   position: absolute;
-  background-image: url(./../../img/main/articles/dots.svg);
+  background-image: url(./../img/main/articles/dots.svg);
   width: 132px;
   height: 115px;
   z-index: -1;
