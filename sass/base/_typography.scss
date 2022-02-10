@@ -24,6 +24,10 @@
 
 }
 
+.h6 {
+    @include font(1.6rem, 3rem, 300);
+}
+
 .p {
     @include font(2.4rem, 3rem, 700);
 }
@@ -32,9 +36,6 @@
     @include font(2.1rem, 3.2rem, 300);
 }
 
-.h6 {
-    @include font(1.6rem, 3rem, 300);
-}
 
 .p2 {
     @include font(1.8rem, 3rem, 300);
