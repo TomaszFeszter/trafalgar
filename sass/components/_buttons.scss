@@ -1,44 +1,25 @@
-.button {
+.btn {
+  border: 1.4px solid $col-primary;
+  border-radius: 55px;
+  background: $col-white;
+  color: $col-primary;
   @include font(1.8rem, 6rem, 700);
+  text-align: center;
   min-width: 20rem;
   min-height: 6rem;
-  color: $col-primary;
-  background: $col-white;
-  border: 1.4px solid $col-primary;
-  border-radius: 5.5rem;
 
   &--blue {
     background-color: $col-primary;
     color: $col-white;
-    border: none;
-  }
-}
-
-// TODO wybrać które rozwiązanie jest optymalne dla projektu
-// TODO kolory przerobić na modyfikatory
-
-.btn {
-  border: 1.4px solid $col-primary;
-  border-radius: 55px;
-  font-weight: 700;
-  text-align: center;
-  max-width: 15rem;
-  line-height: 4.6rem;
-  font-size: 1.6rem;
-  padding: 0 3.5rem;
-
-  &__blue {
-    background-color: $col-primary;
-    color: $col-white;
   }
 
-  &__white {
+  &--white {
     background-color: $col-white;
     color: $col-primary;
     z-index: 1;
   }
 
-  &__link {
+  &--link {
     @include flex(row, center, center);
     font-size: 1.7rem;
     font-weight: 600;
