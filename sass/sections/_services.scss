@@ -1,0 +1,92 @@
+.services {
+    margin-top: 19rem;
+    @include flex(column);
+    overflow: hidden;
+
+    &__container {
+        @include flex(column);
+        max-width: 95.2rem;
+        margin-bottom: 8rem;
+
+        .h2 {
+            margin-bottom: 2.6rem;
+        }
+
+        .p2 {
+            text-align: center;
+            color: $col-grey-800;
+            margin-top: 3.3rem;
+        }
+    }
+
+    &__bg {
+        display: none;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 3.6rem;
+        margin-bottom: 6.9rem;
+    }
+
+    .dot {
+        &--right-s {
+            &::before {
+                top: 31.7rem;
+                right: -3rem;
+            }
+        }
+    }
+
+    &__item {
+        max-width: 35rem;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        padding: 4.7rem 3.8rem;
+        background: $col-white;
+        border-radius: 2rem;
+        filter: drop-shadow(10px 40px 50px rgba(229, 233, 246, 0.4));
+
+        .p4 {
+            color: $col-grey-800;
+        }
+    }
+
+    &__img {
+        margin-bottom: 3.6rem;
+    }
+}
+
+@media (min-width: 670px) {
+    .services {
+        position: relative;
+
+        &__grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        &__bg {
+            display: block;
+            position: absolute;
+            z-index: -2;
+            top: 0;
+            left: 0;
+        }
+
+        &__item {
+            @include flex(column, center, start);
+            text-align: left;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    .services {
+        &__grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            margin-bottom: 6.9rem;
+        }
+    }
+}
