@@ -4,6 +4,11 @@
   width: 100%;
   overflow: hidden;
 
+  .hr {
+    margin: 0 auto;
+  }
+
+
   &__container {
     display: grid;
     grid-template-columns: 1fr;
@@ -14,6 +19,10 @@
     margin-bottom: 7.2rem;
     margin-top: 8rem;
     z-index: 0;
+
+    .h2 {
+      margin-bottom: 2.6rem;
+    }
 
     &__column {
       position: relative;
@@ -30,6 +39,7 @@
 
         .p {
           margin-top: 1.2rem;
+          color: $col-grey-800;
         }
 
         .btn__link {
@@ -43,7 +53,7 @@
     position: absolute;
     left: 15%;
     top: -10%;
-    opacity: 0.5;
+    opacity: 0.4;
     z-index: -1;
   }
 }

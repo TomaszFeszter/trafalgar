@@ -502,6 +502,7 @@ a {
   }
 }
 .footer {
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
   max-width: 100%;
   margin-top: 16rem;
   overflow: visible;
@@ -510,8 +511,9 @@ a {
   color: #FFFFFF;
 }
 .footer__wrapp {
-  max-width: 1469px;
-  padding: 4rem 2rem;
+  max-width: 1496px;
+  margin: 0 auto;
+  padding: 4rem 6rem;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 4rem;
@@ -610,6 +612,7 @@ a {
   padding: 2rem 4rem;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 .testimonial__description {
   margin-top: 4rem;
@@ -677,6 +680,7 @@ a {
   .testimonial__wrapp .h2 {
     margin-top: 2rem;
     font-size: 3.2rem;
+    margin-bottom: 2.5rem;
   }
   .testimonial__wrapp__description {
     margin-bottom: 2rem;
@@ -743,6 +747,9 @@ a {
   width: 100%;
   overflow: hidden;
 }
+.article .hr {
+  margin: 0 auto;
+}
 .article__container {
   display: grid;
   grid-template-columns: 1fr;
@@ -753,6 +760,9 @@ a {
   margin-bottom: 7.2rem;
   margin-top: 8rem;
   z-index: 0;
+}
+.article__container .h2 {
+  margin-bottom: 2.6rem;
 }
 .article__container__column {
   position: relative;
@@ -772,6 +782,7 @@ a {
 }
 .article__container__column__wrapper__text .p {
   margin-top: 1.2rem;
+  color: #7D7987;
 }
 .article__container__column__wrapper__text .btn__link {
   margin-top: 2.4rem;
@@ -780,7 +791,7 @@ a {
   position: absolute;
   left: 15%;
   top: -10%;
-  opacity: 0.5;
+  opacity: 0.4;
   z-index: -1;
 }
 
