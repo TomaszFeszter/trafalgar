@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  justify-content: start;
+  text-align: center;
+
+  &__circle {
+    width: 41px;
+    height: 41px;
+    border-radius: 22px;
+    border: none;
+    background-color: $col-white;
+    color: $col-primary;
+    align-items: center;
+
+    p {
+      text-align: center;
+      margin: 6px 0;
+      color: $col-primary;
+      display: block;
+    }
+  }
+
+  &__txt {
+    display: block;
+    margin-left: 1.2rem;
+  }
+}

@@ -41,8 +41,9 @@
   }
 
   &--left-center::before {
-    top: 0;
+    top: 90rem;
     left: 0;
+    z-index: 2;
   }
 
   &--bottom-center::before {
@@ -81,8 +82,9 @@
     }
 
     &--top-center::after {
-      top: 0;
-      right: 0;
+      top: -5rem;
+      right: 1rem;
+      z-index: 2;
     }
 
     &--left-center::after {

@@ -1,46 +1,45 @@
 .button {
-    @include font(1.8rem, 6rem, 700);
-    min-width: 20rem;
-    min-height: 6rem;
-    color: $col-primary;
-    background: $col-white;
-    border: 1.4px solid $col-primary;
-    border-radius: 5.5rem;
+  @include font(1.8rem, 6rem, 700);
+  min-width: 20rem;
+  min-height: 6rem;
+  color: $col-primary;
+  background: $col-white;
+  border: 1.4px solid $col-primary;
+  border-radius: 5.5rem;
 
-    &--blue {
-        background-color: $col-primary;
-        color: $col-white;
-        border: none;
-    }
-}
-
-.btn {
-    max-width: 15rem;
-    line-height: 4.6rem;
-    border: 1.4px solid $col-primary;
-    border-radius: 55px;
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-align: center;
-    padding: 0 3.5rem;
-    z-index: 1;
-}
-
-.btn__blue {
+  &--blue {
     background-color: $col-primary;
     color: $col-white;
+    border: none;
+  }
 }
 
-.btn__white {
+// TODO wybrać które rozwiązanie jest optymalne dla projektu
+// TODO kolory przerobić na modyfikatory
+
+.btn {
+  border: 1.4px solid $col-primary;
+  border-radius: 55px;
+  font-weight: 700;
+  text-align: center;
+  max-width: 15rem;
+  line-height: 4.6rem;
+  font-size: 1.6rem;
+  padding: 0 3.5rem;
+
+  &__blue {
+    background-color: $col-primary;
+    color: $col-white;
+  }
+
+  &__white {
     background-color: $col-white;
     color: $col-primary;
     z-index: 1;
-}
+  }
 
-.btn__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &__link {
+    @include flex(row, center, center);
     font-size: 1.7rem;
     font-weight: 600;
     line-height: 2.8rem;
@@ -48,10 +47,9 @@
     border: none;
     background: $col-white;
 
-
     svg {
-        fill: $col-blue-400;
-        margin-left: 1.5rem;
+      fill: $col-blue-400;
+      margin-left: 1.5rem;
     }
-
+  }
 }

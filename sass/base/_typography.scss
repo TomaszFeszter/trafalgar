@@ -17,11 +17,24 @@
 
 .h3 {
     @include font(2.4rem, 5.6rem, 700);
+
+    &--footer {
+        line-height: 3.1rem;
+        color: $col-white;
+    }
 }
 
 .h4 {
     @include font(1.8rem, 3.2rem, 700);
 
+}
+
+.h5 {
+    @include font(2rem, 6rem, 700);
+
+    &--white {
+        color: $col-white;
+    }
 }
 
 .h6 {
@@ -36,20 +49,18 @@
     @include font(2.1rem, 3.2rem, 300);
 }
 
-
 .p2 {
     @include font(1.8rem, 3rem, 300);
 
     &--footer {
-        line-height: 2.8rem;
+        line-height: 3.8rem;
+        color: $col-white;
     }
 
     @media screen and (min-width: 1024px) {
         font-size: 1.8rem;
-
     }
 }
-
 
 .p3 {
     @include font(1.8rem, 2.3rem, 400);
@@ -61,11 +72,6 @@
 
 .p4 {
     @include font(1.6rem, 2.8rem, 300);
-}
-
-.hr {
-    background: $col-black;
-    min-width: 5.6rem;
 }
 
 .text-white {
