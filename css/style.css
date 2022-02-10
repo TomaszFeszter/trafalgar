@@ -516,6 +516,11 @@ a {
     top: 16rem;
   }
 }
+main {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .footer {
   background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
   max-width: 100%;
@@ -568,7 +573,8 @@ a {
 @media screen and (min-width: 870px) {
   .footer__wrapp {
     grid-template-columns: 2fr repeat(3, 1fr);
-    padding: 10.9rem 5rem;
+    padding: 10.9rem 10rem;
+    column-gap: 5rem;
   }
   .footer__wrapp__traf {
     grid-row: 1/2;
@@ -833,8 +839,7 @@ a {
     justify-content: left;
     align-items: center;
   }
-
-  .btn {
+  .article .btn {
     max-width: 20rem;
     line-height: 5.6rem;
     font-size: 1.8rem;
@@ -842,7 +847,7 @@ a {
   }
 }
 @media screen and (min-width: 1120px) {
-  .article {
+  .article .cloud {
     right: calc((50vw - 560px) * -1);
   }
 }
