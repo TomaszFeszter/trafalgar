@@ -1,4 +1,6 @@
 .footer {
+  background: $background-linear;
+  max-width: 100%;
   margin-top: 16rem;
   overflow: visible;
 
@@ -7,13 +9,15 @@
   }
 
   &__wrapp {
-    max-width: 1469px;
-    padding: 4rem 2rem;
+    max-width: 1496px;
+    margin: 0 auto;
+    padding: 4rem 6rem;
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 7rem;
-    justify-items: center;
+    row-gap: 4rem;
+    justify-items: left;
     background: $background-linear;
+    overflow: hidden;
 
     &__traf {
       @include flex(column, left, left);
@@ -34,9 +38,7 @@
   }
 
   &__list {
-    @include flex(column, left);
-    margin-bottom: 2rem;
-    height: 100%;
+    @include flex(column, left, left);
 
     &__item--title {
       margin-bottom: 0;
@@ -45,17 +47,24 @@
 }
 
 @media screen and (min-width:870px) {
-  .footer__wrapp {
-    grid-template-columns: 39.1rem repeat(3, 1fr);
-    padding: 10.9rem 2rem;
+  .footer {
 
-    &__traf {
-      grid-row: 1/2;
-      margin-right: 4rem;
+    &__wrapp {
+      grid-template-columns: 39.1rem repeat(3, 1fr);
+      padding: 10.9rem 2rem;
+
+      &__traf {
+        grid-row: 1/2;
+        margin-right: 4rem;
+      }
+    }
+
+    .dots--left-center::before {
+      top: 32rem;
     }
   }
+}
 
-  .footer__list__item--title {
-    margin-bottom: auto;
-  }
+.footer__list__item--title {
+  margin-bottom: auto;
 }

@@ -1,11 +1,9 @@
 .hr {
   width: 5.6rem;
   height: 2px;
-  content: "";
   border: none;
   border-radius: 0.6rem;
   background-color: $col-black;
-  margin: 3rem auto 0 auto;
 
   &--white {
     background-color: $col-white;

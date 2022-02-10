@@ -1,11 +1,9 @@
 .logo {
-  height: 4.5rem;
   display: flex;
   justify-content: start;
   text-align: center;
 
   &__circle {
-
     width: 41px;
     height: 41px;
     border-radius: 22px;
@@ -25,6 +23,5 @@
   &__txt {
     display: block;
     margin-left: 1.2rem;
-
   }
 }

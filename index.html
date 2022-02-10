@@ -9,10 +9,118 @@
   <title>Travel</title>
 </head>
 
-<body>
-  <header>
+<body class="dot dot--left">
+  <header class="header">
+    <nav class="header__nav">
+      <figure class="header__logo">
+        <use xlink:href="./img/header/logo.svg#logo" />
+        </svg>
+        <p class="p">Trafalgar</p>
+      </figure>
+      <ul class="header__list">
+        <li class="header__item p3 bold">Home</li>
+        <li class="header__item p3">Find a doctor</li>
+        <li class="header__item p3">Apps</li>
+        <li class="header__item p3">Testimonials</li>
+        <li class="header__item p3">About us</li>
+      </ul>
+      <figure class="header__menu">
+        <svg class="header__menu-icon">
+          <use xlink:href="./img/symbol-defs.svg#menu" />
+        </svg>
+      </figure>
+    </nav>
+    <section class="header__content">
+      <div class="header__container">
+        <div class="header__wrapper">
+          <h1 class="h1">Virtual healthcare for you</h1>
+          <p class="p1 p1--grey">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and
+            online for
+            everyone</p>
+          <button class="button button--blue">Consult today</button>
+        </div>
+      </div>
+      <figure class="header__img"><img src="img/header/header-img.svg" alt="healthcare for you"></figure>
+    </section>
   </header>
-  <main>
+  <main class="main">
+    <section class="services bg-element">
+      <div class="services__container container">
+        <h2 class="h2">Our services</h2>
+        <hr class="hr">
+        <p class="p2">We provide to you the best choiches for you. Adjust it to your health needs and make sure your
+          undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable
+          for your health</p>
+      </div>
+      <figure class="services__bg">
+        <img src="./img/main/services/vector.svg" alt="services section background">
+      </figure>
+      <section class="services__grid container dot dot--right-s">
+        <div class="services__item">
+          <figure class="services__img"><img src="./img/main/services/search.svg" alt=""></figure>
+          <h3 class="h3">Search doctor</h3>
+          <p class="p4">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+        </div>
+        <div class="services__item">
+          <figure class="services__img"><img src="./img/main/services/pharmacy.svg" alt=""></figure>
+          <h3 class="h3">Online pharmacy</h3>
+          <p class="p4">Buy your medicines with our mobile application with a simple delivery system</p>
+        </div>
+        <div class="services__item">
+          <figure class="services__img"><img src="./img/main/services/consultation.svg" alt=""></figure>
+          <h3 class="h3">Consultation</h3>
+          <p class="p4">Free consultation with our trusted doctors and get the best recomendations</p>
+        </div>
+        <div class="services__item">
+          <figure class="services__img"><img src="./img/main/services/details.svg"" alt=""></figure>
+          <h3 class=" h3">Details info</h3>
+            <p class="p4">Free consultation with our trusted doctors and get the best recomendations</p>
+        </div>
+        <div class="services__item">
+          <figure class="services__img"><img src="./img/main/services/care.svg" alt=""></figure>
+          <h3 class="h3">Emergency care</h3>
+          <p class="p4">You can get 24/7 urgent care for yourself or your children and your
+            lovely family</p>
+        </div>
+        <div class="services__item">
+          <figure class="services__img"><img src="./img/main/services/tracking.svg" alt=""></figure>
+          <h3 class="h3">Tracking</h3>
+          <p class="p4">Track and save your medical history and health data </p>
+        </div>
+      </section>
+      <button class="button">Learn more</button>
+    </section>
+    <section class="illustration dot dot--right">
+      <div class="illustration__item container ">
+        <div class="illustration__container">
+          <h2 class="h2">Leading healthcare providers</h2>
+          <hr class="hr">
+          <p class="p2">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for
+            everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
+          <button class="button">Learn more</button>
+        </div>
+        <figure class="illustration__img">
+          <img src="./img/main/mid_section/healthcare.svg" alt="image Leading healthcare providers">
+        </figure>
+      </div>
+      <div class="illustration__item container">
+        <div class="illustration__container">
+          <h2 class="h2">Download our mobile apps</h2>
+          <hr class="hr">
+          <p class="p2">Our dedicated patient engagement app and web portal allow you to access information
+            instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
+          <button class="button">
+            Download
+            <svg class="illustration__btn-icon">
+              <use xlink:href="./img/symbol-defs.svg#arrow" />
+            </svg>
+          </button>
+        </div>
+        <figure class="illustration__img">
+          <img src="./img/main/mid_section/app.svg" alt="image mobile apps">
+        </figure>
+      </div>
+    </section>
     <section class="testimonial container">
       <div class="testimonial__wrapp dots dots--bottom-left dots__second dots__second--top-right">
         <h2 class="h2 text-white">What our customer are saying</h2>
@@ -23,10 +131,10 @@
             <img class="person__img" src="./img/main/customer/customer.svg" alt="pictures of customer">
             <div class="person__txt">
               <p class="h4 text-white">Edward Newgate</p>
-              <p class="p">Founder Circle</p>
+              <p class="p p4">Founder Circle</p>
             </div>
           </div>
-          <p class="p">“Our dedicated patient engagement app and
+          <p class="p p4">“Our dedicated patient engagement app and
             web portal allow you to access information instantaneously (no tedeous form, long calls,
             or administrative hassle) and securely”
           </p>
@@ -89,7 +197,7 @@
             <div class="article__container__column__wrapper__text">
               <h4 class="h4">Disease detection, check
                 up in the laboratory</h4>
-              <p class="p">In this case, the role of the health laboratory is very important to do
+              <p class="p p4">In this case, the role of the health laboratory is very important to do
                 a disease detection...</p>
               <a href="#" class="btn__link">Read more<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="14"
                   height="14" viewBox="0 0 32 32">
@@ -98,7 +206,6 @@
                     d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z">
                   </path>
                 </svg></a>
-
             </div>
           </div>
         </div>
@@ -108,9 +215,10 @@
             <div class="article__container__column__wrapper__text">
               <h4 class="h4">Herbal medicines that are
                 safe for consumption</h4>
-              <p class="p">Herbal medicine is very widely used at this time because of its very good for your health...
+              <p class="p p4">Herbal medicine is very widely used at this time because of its very good for your
+                health...
               </p>
-              <a href="#" class="btn__link">Read more<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="14"
+              <a href="#" class="btn--link">Read more<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="14"
                   height="14" viewBox="0 0 32 32">
                   <title>arrow-right2</title>
                   <path
@@ -127,7 +235,7 @@
             <div class="article__container__column__wrapper__text">
               <h4 class="h4">Natural care for healthy
                 facial skin</h4>
-              <p class="p">A healthy lifestyle should start from now and also for your skin health.
+              <p class="p p4">A healthy lifestyle should start from now and also for your skin health.
                 There are some...</p>
               <a href="#" class="btn__link">Read more<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="14"
                   height="14" viewBox="0 0 32 32">
@@ -142,11 +250,11 @@
           </div>
         </div>
       </div>
-      <button class="articles__view-all btn btn__white">View all</button>
+      <button class="btn btn--white">View all</button>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer__wrapp dots dots--left-center dots__second dots__second--top-center">
+  <footer class="footer  dots dots__second dots__second--top-center">
+    <div class="footer__wrapp dots dots--left-center ">
       <div class="footer__wrapp__traf">
         <div class="logo">
           <div class="logo__circle">
