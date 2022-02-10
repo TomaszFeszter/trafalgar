@@ -864,9 +864,9 @@ a {
   gap: 3.6rem;
   margin-bottom: 6.9rem;
 }
-.services .dot--right::before {
-  top: 28.7rem;
-  right: -5rem;
+.services .dot--right-s::before {
+  top: 31.7rem;
+  right: -3rem;
 }
 .services__item {
   max-width: 35rem;
