@@ -159,6 +159,23 @@ a {
   font-weight: 300;
   src: url(../fonts/Mulish-Light.ttf) format("truetype");
 }
+.button {
+  font-size: 1.8rem;
+  line-height: 6rem;
+  font-weight: 700;
+  min-width: 20rem;
+  min-height: 6rem;
+  color: #458FF6;
+  background: #FFFFFF;
+  border: 1.4px solid #458FF6;
+  border-radius: 5.5rem;
+}
+.button--blue {
+  background-color: #458FF6;
+  color: #FFFFFF;
+  border: none;
+}
+
 .btn {
   border: 1.4px solid #458FF6;
   border-radius: 55px;
@@ -501,6 +518,11 @@ a {
     top: 16rem;
   }
 }
+main {
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .footer {
   background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
   max-width: 100%;
@@ -552,8 +574,9 @@ a {
 
 @media screen and (min-width: 870px) {
   .footer__wrapp {
-    grid-template-columns: 39.1rem repeat(3, 1fr);
-    padding: 10.9rem 2rem;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    padding: 10.9rem 10rem;
+    column-gap: 5rem;
   }
   .footer__wrapp__traf {
     grid-row: 1/2;
@@ -562,11 +585,10 @@ a {
   .footer .dots--left-center::before {
     top: 32rem;
   }
+  .footer__list__item--title {
+    margin-bottom: auto;
+  }
 }
-.footer__list__item--title {
-  margin-bottom: auto;
-}
-
 @font-face {
   font-family: "Mulish";
   font-style: normal;
@@ -745,10 +767,20 @@ a {
   margin-top: 14rem;
   text-align: center;
   width: 100%;
-  overflow: hidden;
+  position: relative;
+}
+.article .cloud {
+  position: absolute;
+  right: -15%;
+  top: 82px;
+  opacity: 0.5;
+  z-index: -1;
 }
 .article .hr {
   margin: 0 auto;
+}
+.article .h2 {
+  margin-bottom: 2.6rem;
 }
 .article__container {
   display: grid;
@@ -760,9 +792,6 @@ a {
   margin-bottom: 7.2rem;
   margin-top: 8rem;
   z-index: 0;
-}
-.article__container .h2 {
-  margin-bottom: 2.6rem;
 }
 .article__container__column {
   position: relative;
@@ -784,15 +813,8 @@ a {
   margin-top: 1.2rem;
   color: #7D7987;
 }
-.article__container__column__wrapper__text .btn__link {
+.article__container__column__wrapper__text .btn--link {
   margin-top: 2.4rem;
-}
-.article .cloud {
-  position: absolute;
-  left: 15%;
-  top: -10%;
-  opacity: 0.4;
-  z-index: -1;
 }
 
 @media screen and (min-width: 450px) {
@@ -824,6 +846,11 @@ a {
     line-height: 5.6rem;
     font-size: 1.8rem;
     padding: 0 6.5rem;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .article .cloud {
+    right: calc((50vw - 560px) * -1);
   }
 }
 .services {

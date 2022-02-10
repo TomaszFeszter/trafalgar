@@ -1,3 +1,19 @@
+.button {
+  @include font(1.8rem, 6rem, 700);
+  min-width: 20rem;
+  min-height: 6rem;
+  color: $col-primary;
+  background: $col-white;
+  border: 1.4px solid $col-primary;
+  border-radius: 5.5rem;
+
+  &--blue {
+    background-color: $col-primary;
+    color: $col-white;
+    border: none;
+  }
+}
+
 .btn {
   border: 1.4px solid $col-primary;
   border-radius: 55px;
