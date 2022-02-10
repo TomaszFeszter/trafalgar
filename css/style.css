@@ -562,6 +562,14 @@ a {
   text-align: center;
   max-width: 100%;
   overflow: hidden;
+  position: relative;
+}
+.article .cloud {
+  position: absolute;
+  left: 15%;
+  top: -10%;
+  opacity: 0.5;
+  z-index: -1;
 }
 .article__container {
   display: grid;
@@ -596,13 +604,6 @@ a {
 }
 .article__container__column__wrapper__text .btn__link {
   margin-top: 2.4rem;
-}
-.article .cloud {
-  position: absolute;
-  left: 15%;
-  top: -10%;
-  opacity: 0.5;
-  z-index: -1;
 }
 
 @media screen and (min-width: 450px) {
