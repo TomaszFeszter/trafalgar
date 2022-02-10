@@ -50,8 +50,8 @@
   .footer {
 
     &__wrapp {
-      grid-template-columns: 39.1rem repeat(3, 1fr);
-      padding: 10.9rem 2rem;
+      grid-template-columns: 2fr repeat(3, 1fr);
+      padding: 10.9rem 5rem;
 
       &__traf {
         grid-row: 1/2;
@@ -62,9 +62,9 @@
     .dots--left-center::before {
       top: 32rem;
     }
-  }
-}
 
-.footer__list__item--title {
-  margin-bottom: auto;
+    &__list__item--title {
+      margin-bottom: auto;
+    }
+  }
 }

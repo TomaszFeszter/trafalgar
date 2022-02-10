@@ -567,8 +567,8 @@ a {
 
 @media screen and (min-width: 870px) {
   .footer__wrapp {
-    grid-template-columns: 39.1rem repeat(3, 1fr);
-    padding: 10.9rem 2rem;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    padding: 10.9rem 5rem;
   }
   .footer__wrapp__traf {
     grid-row: 1/2;
@@ -577,11 +577,10 @@ a {
   .footer .dots--left-center::before {
     top: 32rem;
   }
+  .footer__list__item--title {
+    margin-bottom: auto;
+  }
 }
-.footer__list__item--title {
-  margin-bottom: auto;
-}
-
 @font-face {
   font-family: "Mulish";
   font-style: normal;
