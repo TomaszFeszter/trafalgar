@@ -1,3 +1,4 @@
+// TODO trzeba wyrzucić jedną klasę od dotsów i dostosować projekt
 .dot {
     position: relative;
     overflow: visible;
@@ -5,7 +6,7 @@
     &::before {
         content: "";
         position: absolute;
-        background-image: url(./../../img/main/articles/dots.svg);
+        background-image: url(./../img/main/articles/dots.svg);
         width: 132px;
         height: 115px;
         z-index: -1;
