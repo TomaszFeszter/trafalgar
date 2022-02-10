@@ -1,47 +1,46 @@
-@media (min-width: 320px) {
-    .illustration {
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 22rem;
+.illustration {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 22rem;
 
-        &__item {
-            @include flex(column);
-            margin-top: 22rem;
+    &__item {
+        @include flex(column);
+        margin-top: 22rem;
+    }
+
+    &__container {
+        @include flex(column);
+        margin-bottom: 2.5rem;
+        text-align: center;
+
+        .h2 {
+            margin-bottom: 2rem;
         }
 
-        &__container {
-            @include flex(column);
-            margin-bottom: 2.5rem;
-            text-align: center;
-
-            .h2 {
-                margin-bottom: 2rem;
-            }
-
-            .p2 {
-                margin-top: 2.5rem;
-                margin-bottom: 3rem;
-                color: $col-grey-800;
-            }
-        }
-
-        &__btn-icon {
-            transform: rotate(90deg);
-            width: 3rem;
-            height: 1.5rem;
-            fill: $col-primary;
+        .p2 {
+            margin-top: 2.5rem;
+            margin-bottom: 3rem;
+            color: $col-grey-800;
         }
     }
 
-    .dot {
-        &--right {
-            &::before {
-                top: 96.5rem;
-                right: -5rem;
-            }
+    &__btn-icon {
+        transform: rotate(90deg);
+        width: 3rem;
+        height: 1.5rem;
+        fill: $col-primary;
+    }
+}
+
+.dot {
+    &--right {
+        &::before {
+            top: 96.5rem;
+            right: -5rem;
         }
     }
 }
+
 
 @media (min-width: 768px) {
     .illustration {
