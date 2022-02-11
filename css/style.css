@@ -187,6 +187,11 @@ a {
   text-align: center;
   min-width: 20rem;
   min-height: 6rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #5B9BF3;
+  color: #FFFFFF;
 }
 .btn--blue {
   background-color: #458FF6;
@@ -650,6 +655,10 @@ main {
 }
 .testimonial__description .person__img {
   max-width: 141px;
+  transition: all 0.4s;
+}
+.testimonial__description .person__img:hover {
+  transform: scale(1.3);
 }
 .testimonial__description .person__txt {
   margin-top: 3rem;
@@ -799,6 +808,11 @@ main {
   background: #FFFFFF;
   border-radius: 20px;
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  transition: all 0.4s;
+}
+.article__container__column:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 40px 50px rgba(229, 233, 246, 0.9);
 }
 .article__container__column__wrapper__text {
   display: flex;
