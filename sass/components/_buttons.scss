@@ -23,6 +23,12 @@
   text-align: center;
   min-width: 20rem;
   min-height: 6rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $col-blue-250;
+    color: $col-white;
+  }
 
   &--blue {
     background-color: $col-primary;

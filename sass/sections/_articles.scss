@@ -37,6 +37,12 @@
       background: $col-white;
       border-radius: 20px;
       box-shadow: 10px 40px 50px $box-shadow;
+      transition: all 0.4s;
+
+      &:hover {
+        transform: translateY(-1.2rem);
+        box-shadow: 0 40px 50px $box-shadow-hoover;
+      }
 
       &__wrapper__text {
         @include flex(column);
