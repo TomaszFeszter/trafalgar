@@ -27,6 +27,13 @@
 
     &__item {
         color: $col-blue-1000;
+        transition: text-shadow .1s, transform .1s;
+    }
+
+    &__item:hover {
+        transform: translateY(-1.5px);
+        text-shadow: 0 3px 3px rgba(17, 7, 7, 0.4);
+        cursor: pointer;
     }
 
     &__menu-icon {

@@ -48,10 +48,17 @@
         background: $col-white;
         border-radius: 2rem;
         filter: drop-shadow(10px 40px 50px rgba(229, 233, 246, 0.4));
+        transition: box-shadow .5s, transform .5s;
 
         .p4 {
             color: $col-grey-800;
         }
+    }
+
+    &__item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 8px rgba(17, 7, 7, 0.15);
+        cursor: pointer;
     }
 
     &__img {

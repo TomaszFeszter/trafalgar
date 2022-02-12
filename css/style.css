@@ -373,6 +373,12 @@ button:hover .illustration__btn-icon {
 }
 .header__item {
   color: #1F1534;
+  transition: text-shadow 0.1s, transform 0.1s;
+}
+.header__item:hover {
+  transform: translateY(-1.5px);
+  text-shadow: 0 3px 3px rgba(17, 7, 7, 0.4);
+  cursor: pointer;
 }
 .header__menu-icon {
   width: 3rem;
@@ -898,9 +904,15 @@ main {
   background: #FFFFFF;
   border-radius: 2rem;
   filter: drop-shadow(10px 40px 50px rgba(229, 233, 246, 0.4));
+  transition: box-shadow 0.5s, transform 0.5s;
 }
 .services__item .p4 {
   color: #7D7987;
+}
+.services__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 8px rgba(17, 7, 7, 0.15);
+  cursor: pointer;
 }
 .services__img {
   margin-bottom: 3.6rem;
