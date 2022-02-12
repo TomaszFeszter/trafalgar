@@ -159,23 +159,6 @@ a {
   font-weight: 300;
   src: url(../fonts/Mulish-Light.ttf) format("truetype");
 }
-.button {
-  font-size: 1.8rem;
-  line-height: 6rem;
-  font-weight: 700;
-  min-width: 20rem;
-  min-height: 6rem;
-  color: #458FF6;
-  background: #FFFFFF;
-  border: 1.4px solid #458FF6;
-  border-radius: 5.5rem;
-}
-.button--blue {
-  background-color: #458FF6;
-  color: #FFFFFF;
-  border: none;
-}
-
 .btn {
   border: 1.4px solid #458FF6;
   border-radius: 55px;
@@ -188,10 +171,6 @@ a {
   min-width: 20rem;
   min-height: 6rem;
   cursor: pointer;
-}
-.btn:hover {
-  background-color: #5B9BF3;
-  color: #FFFFFF;
 }
 .btn--blue {
   background-color: #458FF6;
@@ -217,6 +196,14 @@ a {
 .btn--link svg {
   fill: #4089ED;
   margin-left: 1.5rem;
+}
+
+button:hover {
+  background-color: #5B9BF3;
+  color: #FFFFFF;
+}
+button:hover .illustration__btn-icon {
+  fill: #FFFFFF;
 }
 
 .dot {
@@ -546,7 +533,6 @@ main {
   row-gap: 4rem;
   justify-items: left;
   background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
-  overflow: hidden;
 }
 .footer__wrapp__traf {
   display: flex;
@@ -639,7 +625,6 @@ main {
   padding: 2rem 4rem;
   position: relative;
   z-index: 1;
-  overflow: hidden;
 }
 .testimonial__description {
   margin-top: 4rem;
