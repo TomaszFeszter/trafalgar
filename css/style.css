@@ -539,6 +539,7 @@ main {
   row-gap: 4rem;
   justify-items: left;
   background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+  overflow: hidden;
 }
 .footer__wrapp__traf {
   display: flex;

@@ -17,6 +17,7 @@
     row-gap: 4rem;
     justify-items: left;
     background: $background-linear;
+    overflow: hidden;
 
     &__traf {
       @include flex(column, left, left);
