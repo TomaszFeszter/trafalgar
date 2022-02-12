@@ -21,7 +21,7 @@
   }
 
   &--link {
-    @include flex(row, center, center);
+    @include flex(row, left, center);
     font-size: 1.7rem;
     font-weight: 600;
     line-height: 2.8rem;

@@ -184,7 +184,7 @@ a {
 .btn--link {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   font-size: 1.7rem;
   font-weight: 600;
@@ -809,7 +809,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   margin: 2.4rem;
   text-align: left;
   z-index: 1;

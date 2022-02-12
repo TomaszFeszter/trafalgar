@@ -46,7 +46,7 @@
       }
 
       &__wrapper__text {
-        @include flex(column);
+        @include flex(column, center, left);
         margin: 2.4rem;
         text-align: left;
         z-index: 1;
