@@ -1,19 +1,3 @@
-.button {
-  @include font(1.8rem, 6rem, 700);
-  min-width: 20rem;
-  min-height: 6rem;
-  color: $col-primary;
-  background: $col-white;
-  border: 1.4px solid $col-primary;
-  border-radius: 5.5rem;
-
-  &--blue {
-    background-color: $col-primary;
-    color: $col-white;
-    border: none;
-  }
-}
-
 .btn {
   border: 1.4px solid $col-primary;
   border-radius: 55px;
@@ -24,11 +8,6 @@
   min-width: 20rem;
   min-height: 6rem;
   cursor: pointer;
-
-  &:hover {
-    background-color: $col-blue-250;
-    color: $col-white;
-  }
 
   &--blue {
     background-color: $col-primary;
@@ -54,5 +33,14 @@
       fill: $col-blue-400;
       margin-left: 1.5rem;
     }
+  }
+}
+
+button:hover {
+  background-color: $col-blue-250;
+  color: $col-white;
+
+  .illustration__btn-icon {
+    fill: $col-white;
   }
 }
