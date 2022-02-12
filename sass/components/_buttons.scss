@@ -7,6 +7,7 @@
   text-align: center;
   min-width: 20rem;
   min-height: 6rem;
+  cursor: pointer;
 
   &--blue {
     background-color: $col-primary;
@@ -32,5 +33,14 @@
       fill: $col-blue-400;
       margin-left: 1.5rem;
     }
+  }
+}
+
+button:hover {
+  background-color: $col-blue-250;
+  color: $col-white;
+
+  .illustration__btn-icon {
+    fill: $col-white;
   }
 }
