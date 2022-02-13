@@ -133,30 +133,35 @@ a {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 800;
+  font-display: swap;
   src: url(../fonts/Mulish-ExtraBold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: url(../fonts/Mulish-SemiBold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: url(../fonts/Mulish-Medium.ttf) format("truetype");
 }
 @font-face {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url(../fonts/Mulish-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: url(../fonts/Mulish-Light.ttf) format("truetype");
 }
 .btn {
@@ -591,30 +596,35 @@ main {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 800;
+  font-display: swap;
   src: url(../fonts/Mulish-ExtraBold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
   src: url(../fonts/Mulish-SemiBold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 500;
+  font-display: swap;
   src: url(../fonts/Mulish-Medium.ttf) format("truetype");
 }
 @font-face {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url(../fonts/Mulish-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 300;
+  font-display: swap;
   src: url(../fonts/Mulish-Light.ttf) format("truetype");
 }
 .testimonial {
@@ -646,7 +656,10 @@ main {
   margin-top: 0.5rem;
 }
 .testimonial__description .person__img {
-  max-width: 141px;
+  width: 133px;
+  height: 133px;
+  border: none;
+  border-radius: 70px;
   transition: all 0.4s;
 }
 .testimonial__description .person__img:hover {
@@ -805,6 +818,12 @@ main {
 .article__container__column:hover {
   transform: translateY(-1.2rem);
   box-shadow: 0 40px 50px rgba(229, 233, 246, 0.9);
+}
+.article__container__column__wrapper img {
+  width: 320px;
+  height: 240px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 .article__container__column__wrapper__text {
   display: flex;
