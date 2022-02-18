@@ -20,7 +20,7 @@
     overflow: hidden;
 
     &__traf {
-      @include flex(column, left, left);
+      @include flex(column, flex-start, left);
       grid-row: 4/5;
 
       .logo {
